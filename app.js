@@ -93,8 +93,8 @@ function weatherInfo(){
       
         document.querySelector(".nameOfCity").innerHTML=nameOfCity;
         document.querySelector(".dayTemp").innerHTML=currentTemp;
-        document.querySelector(".dailyDown").innerHTML="<i class='fas fa-angle-down'> </i>"+currentTempMax;
-        document.querySelector(".dailyUp").innerHTML="<i class='fas fa-angle-up'> </i>"+currentTempMin;	
+        document.querySelector(".dailyDown").innerHTML="<i class='fas fa-angle-up'> </i>"+currentTempMax;
+        document.querySelector(".dailyUp").innerHTML="<i class='fas fa-angle-down'> </i>"+currentTempMin;	
         document.querySelector(".dayDescription").innerHTML=currentDescription;
         document.querySelector(".dayTempIcon").innerHTML="<img src=' " + currentIcon+" '>";
         document.querySelector(".sunrise").innerHTML=sunRiseTime;
