@@ -1,0 +1,126 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(2, 96, 173, 0.945); }
+
+div h1 {
+  text-align: right;
+  font-size: 85px; }
+
+div .searchButton {
+  background-color: rgba(151, 177, 231, 0.89);
+  border: 0px solid;
+  border-radius: 5px;
+  margin-top: 40px; }
+
+div .searchInput {
+  border: 0px solid;
+  border-radius: 5px;
+  margin-top: 40px; }
+
+div h2 {
+  margin-top: 30px; }
+
+div .fa-search {
+  opacity: 0.5; }
+
+div div div .d-block {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+div div h1 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px;
+  padding: 10px; }
+
+div .dayTemp {
+  border: 0px solid #fff;
+  border-radius: 5px;
+  margin-top: 50px; }
+
+div .fa-angle-down {
+  margin: 10px;
+  color: rgba(6, 18, 88, 0.952);
+  opacity: 0.6; }
+div .fa-angle-up {
+  margin: 10px;
+  color: rgba(6, 18, 88, 0.952);
+  opacity: 0.6; }
+
+div span {
+  float: right;
+  font-size: 20px;
+  border: 0px solid #706565; }
+
+div .top-container-row .dayTempIcon {
+  float: 50%;
+  font-size: 200px;
+  right: -50%;
+  margin-top: 40px; }
+
+div .dayTempIcon img {
+  float: 50%;
+  width: 200px;
+  height: 200px;
+  right: -50%;
+  margin-top: 40px; }
+
+div .dayDescription {
+  font-size: 20px;
+  color: rgba(6, 18, 88, 0.952);
+  font-weight: bolder;
+  float: left;
+  opacity: 0.6; }
+
+div .top-container-row {
+  background: #408ef3;
+  background-image: linear-gradient(#408ef3, white);
+  margin-bottom: 10px;
+  padding: 10px; }
+
+div .grid-container .all {
+  font-size: 18px;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  font-weight: bolder;
+  float: left;
+  margin: 10px;
+  padding: 10px; }
+
+div .main-container-table {
+  text-align: center;
+  margin-bottom: 30px; }
+
+div .week-container-table {
+  background: #408ef3;
+  border: 0px;
+  padding: 10px; }
+
+div span {
+  margin-right: 10px; }
+
+div .grid-container {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  justify-content: space-evenly; }
+
+div .grid-container div {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  background-image: linear-gradient(#0066ff, #00b7ff);
+  border-radius: 10px; }
+
+div .header {
+  opacity: 0.5;
+  font-size: 18px; }
+
+/*# sourceMappingURL=style.css.map */
