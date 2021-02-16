@@ -1,4 +1,4 @@
-
+document.write( '<script type="text/javascript" src="config.js"></script>');
   
    
  document.querySelector(".searchButton").addEventListener("click",weatherInfo);
@@ -11,7 +11,7 @@
  
  let mainContainer = document.querySelector(".all");
  var myKey = config.MY_KEY;
- //const api = "b7cc5077d2f29668e2d6976ed0b44f8f";
+ 
  
 function weatherInfo(){
 
