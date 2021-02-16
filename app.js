@@ -10,7 +10,7 @@ document.write( '<script type="text/javascript" src="config.js"></script>');
  });
  
  let mainContainer = document.querySelector(".all");
- var myKey = config.MY_KEY;
+ var myKey = "b7cc5077d2f29668e2d6976ed0b44f8f";
  
  
 function weatherInfo(){
