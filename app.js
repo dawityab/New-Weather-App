@@ -50,13 +50,11 @@ function weatherInfo(){
         let pressure = data.main.pressure+" hPa";
       
      
-        $.getJSON("api.openweathermap.org/data/2.5/weather?q="+city+"&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
+        $.getJSON("api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+myKey,function(data){
           console.log(data);
        });
-      //  $.getJSON("api.openweathermap.org/data/2.5/find?lat="+data.coord.lat+"&lon="+data.coord.lon+"&cnt=3&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
-      //   console.log(cnt);
-      //   })
-      $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat="+data.coord.lat+"&lon="+data.coord.lon+"&exclude=daily&units=metric&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
+     
+      $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat="+data.coord.lat+"&lon="+data.coord.lon+"&exclude=daily&units=metric&appid="+myKey,function(data){
        let hour1 = Math.round(data.hourly[10].temp);
        let hour2 = Math.round(data.hourly[20].temp);
        let hour3 = Math.round(data.hourly[47].temp);
@@ -172,13 +170,12 @@ function weatherInfo(){
             let pressure = data.main.pressure+" hPa";
           
          
-            $.getJSON("api.openweathermap.org/data/2.5/weather?q="+city+"&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
+            $.getJSON("api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+myKey,function(data){
               console.log(data);
            });
-          //  $.getJSON("api.openweathermap.org/data/2.5/find?lat="+data.coord.lat+"&lon="+data.coord.lon+"&cnt=3&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
-          //   console.log(cnt);
-          //   })
-          $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat="+data.coord.lat+"&lon="+data.coord.lon+"&exclude=daily&units=metric&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
+          
+
+          $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat="+data.coord.lat+"&lon="+data.coord.lon+"&exclude=daily&units=metric&appid="+myKey,function(data){
            let hour1 = Math.round(data.hourly[10].temp);
            let hour2 = Math.round(data.hourly[20].temp);
            let hour3 = Math.round(data.hourly[47].temp);
