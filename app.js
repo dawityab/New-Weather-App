@@ -140,7 +140,7 @@ function weatherInfo(){
       var city = "London";
      // var city=document.querySelector('.searchInput').value; 
 
-      $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
+      $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid="+myKey,function(data){
             console.log(data);	
             let nameOfCity = data.name;
             let currentTemp = Math.round(data.main.temp)+"&#8451;";
