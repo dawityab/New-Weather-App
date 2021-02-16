@@ -10,13 +10,16 @@
  });
  
  let mainContainer = document.querySelector(".all");
+ var myKey = config.MY_KEY;
+ //const api = "b7cc5077d2f29668e2d6976ed0b44f8f";
  
 function weatherInfo(){
 
   var city=document.querySelector('.searchInput').value; 
 
-  $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=b7cc5077d2f29668e2d6976ed0b44f8f",function(data){
-        console.log(data);	
+  $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid="+myKey,function(data){
+        console.log(data);
+        	
         let nameOfCity = data.name;
         let currentTemp = Math.round(data.main.temp)+"&#8451;";
         let currentTempMax = "&nbsp; &nbsp;"+Math.round(data.main.temp_max)+"&#8451;";
@@ -66,6 +69,9 @@ function weatherInfo(){
       console.log(hour1);
       console.log(hour2);
       console.log(hour3);
+     
+     
+
 
       let allHours = data.hourly;
       let sixHours =allHours.slice(0,6);
@@ -182,6 +188,7 @@ function weatherInfo(){
           console.log(data.current.temp);
           early = new Date(early1*1000);
           console.log(early.getHours());
+
           console.log(hour1);
           console.log(hour2);
           console.log(hour3);
